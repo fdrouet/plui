@@ -1,0 +1,10 @@
+*{
+ *  create a javascript element to make a jQuery datepicker on a input field
+ *  id (required) the ID of the html input field
+ *  lang (optional) the lang to use for the datepicker (default: en-GB)
+}*
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#${_id}").datepicker($.datepicker.regional['${_lang ? _lang :'en-GB'}']);
+    });
+</script>
