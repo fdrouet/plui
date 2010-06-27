@@ -1,4 +1,6 @@
+/eclipse/*
 /lib
 /logs
-
+/.settings
 /.project
+/.classpath
