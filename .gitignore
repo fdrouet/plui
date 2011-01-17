@@ -1,7 +1,7 @@
-/eclipse/*
-/lib
-/logs
-/.settings
-/.project
-/.classpath
-/*.pyc
+eclipse/*
+lib/*
+logs/*
+.classpath
+.project
+.settings/
+*.pyc
