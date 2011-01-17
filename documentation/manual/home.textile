@@ -5,12 +5,12 @@ h1. UI Module
 This module help you to use various javascript / css frameworks like :
 
 * <a>Blueprint</a> ("blueprintcss.org":http://blueprintcss.org/)
-** Bundled version(s) : 0.9.1
+** Bundled version(s) : 1.0.0 (+ 0.9.1)
 
 bq. Blueprint is a CSS framework, which aims to cut down on your development time. It gives you a solid foundation to build your project on top of, with an easy-to-use grid, sensible typography, useful plugins, and even a stylesheet for printing.
 
 * **jQuery** ( "jquery.com":http://jquery.com/)
-** Bundled version(s) : 1.4.2
+** Bundled version(s) : 1.4.4 (+ 1.4.2 + 1.4.3)
 
 bq. jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.
 
