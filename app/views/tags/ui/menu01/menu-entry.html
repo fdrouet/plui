@@ -1,0 +1,9 @@
+*{ Init Tiny MCE for one particular html element
+ *  htmlClass (optional) the CSS Class of the input (default: mceEditor)
+}*
+*{
+    if (_htmlClass == null) {
+        throw new play.exceptions.TagInternalException("htmlClass attribute must be defined");
+    }
+}*
+<li>#{doBody /}</li>

@@ -1,0 +1,25 @@
+h1. Menu 01
+
+{toc}
+
+h1. Macro ui.menu01.css
+
+bc. <head>
+    ...
+    #{ui.menu01.css /}
+    ...
+</head>
+
+will generate the necessary code to import the css
+
+h1. Create the menu and entries
+
+bc. <head>
+    ...
+    #{ui.menu01.menu}
+        #{ui.menu01.menu-entry}#{a @Application.index()}Accueil#{/a}#{/ui.menu01.menu-entry}
+        #{ui.menu01.menu-entry}<a href="#" title="Administration">Administration</a>#{/ui.menu01.menu-entry}
+    #{/ui.menu01.menu}
+    ...
+</head>
+
