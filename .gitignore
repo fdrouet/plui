@@ -1,7 +1,17 @@
-eclipse/*
-lib/*
-logs/*
-.classpath
+# ignore standard temp files
+*.swp
+
+# ignore eclipse files
 .project
-.settings/
+.settings
+*.classpath
+
+# ignore Playframework files
+eclipse/
+logs/
+tmp/
 *.pyc
+
+# ignore Maven files
+*target/
+
