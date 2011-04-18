@@ -4,8 +4,8 @@
  *  charset (optional) the charset to use for javascript link (default: utf-8)
  *  lang (optional) the lang to use for jQuery UI (default: en-GB)
 }*
-    #{script id:'jquery-ui', src:'jquery-ui/1.8.1/jquery-ui.custom'+((play.mode == play.Play.Mode.DEV || _mode == 'DEV') ? '' : '.min')+'.js', charset:_charset /}
-	#{script id:'jquery-ui-i18n', src:'jquery-ui/1.8.1/i18n/jquery-ui-i18n.js', charset:_charset /}
+    #{script id:'jquery-ui', src:'jquery-ui/1.8.11/jquery-ui.custom'+((play.mode == play.Play.Mode.DEV || _mode == 'DEV') ? '' : '.min')+'.js', charset:_charset /}
+	#{script id:'jquery-ui-i18n', src:'jquery-ui/1.8.11/i18n/jquery-ui-i18n.js', charset:_charset /}
 	<script type="text/javascript">
 		$(document).ready(function() {
 		    $.datepicker.setDefaults($.datepicker.regional['${_lang ? _lang :'en-GB'}']);
