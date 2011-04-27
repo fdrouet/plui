@@ -9,7 +9,7 @@ Add the following lines in your dependencies.yml to add plui module to your proj
 bc. require:
     - play 1.2
     - ...
-    - org.tarpoon -> plui 0.1.0
+    - org.tarpoon -> plui 0.2.0
 # My repositories
 repositories:
     - fdrouet:
