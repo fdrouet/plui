@@ -1,20 +1,19 @@
-%{ ~~~~~~~~~~~~~~~~~~~~~
+*{ ~~~~~~~~~~~~~~~~~~~~~
 # Parameters
   - identifier : the Thread identifier to use in the current forum
-   ~~~~~~~~~~~~~~~~~~~~~ }%
+   ~~~~~~~~~~~~~~~~~~~~~ }*
 #{if play.configuration['plui.disqus.shortname']}
+<!-- Disqus forum thread - START -->
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = '${play.configuration['plui.disqus.shortname']}';
     // The following are highly recommended additional parameters. Remove the slashes in front to use.
     // var disqus_identifier = 'unique_dynamic_id_1234';
     // var disqus_url = 'http://example.com/permalink-to-page.html';
-    #{if _identifier}
-    var disqus_identifier = '${_identifier}';
-    #{/if}
-    #{if play.mode.name() == 'DEV'}
-    var disqus_developer = 1;
-    #{/if}
+    #{if _identifier}var disqus_identifier = '${_identifier}';#{/if}
+    
+    #{if play.mode.name() == 'DEV'}var disqus_developer = 1;#{/if}
+    
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -22,4 +21,6 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
+<!-- Disqus forum thread - START -->
 #{/if}
+#{else}<!-- no Disqus forum thread integration -->#{/else}

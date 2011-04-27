@@ -1,12 +1,12 @@
-%{ ~~~~~~~~~~~~~~~~~~~~~
-# Parameters
+*{ ~~~~~~~~~~~~~~~~~~~~~
+#  Parameters
   - <nothing>
-   ~~~~~~~~~~~~~~~~~~~~~ }%
-#{if play.mode.name() == 'DEV' && plui.googleanalytics.indev == false}
+   ~~~~~~~~~~~~~~~~~~~~~ }*
+#{if play.mode.name() == 'DEV' && play.configuration['plui.googleanalytics.indev'] == false}
 <!-- No Google Analytics tracker (DEV Mode) -->
 #{/if}
 #{elseif play.configuration['plui.googleanalytics.account']}
-<!-- Google Analytics tracker -->
+<!-- Google Analytics tracker - START -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '${play.configuration['plui.googleanalytics.account']}']);
@@ -17,6 +17,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<!-- Google Analytics tracker - END -->
 #{/elseif}
 #{else}
 <!-- No Google Analytics tracker (no account specified) -->
