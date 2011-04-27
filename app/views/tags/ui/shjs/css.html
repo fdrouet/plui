@@ -1,0 +1,15 @@
+*{ ~~~~~~~~~~~~~~~~~~~~~
+If Play is in DEV mode, we use the non minified css.
+If a theme parameter is defined in the macro, it is used to choose the coloration
+If a theme parameter is not defined in the macro and the plui.shjs.theme is defined in application.conf, it is used to choose the coloration
+If no theme is defined, we use the default "style" theme
+# Parameters
+  - theme : the style name for the coloration (default: style)
+   ~~~~~~~~~~~~~~~~~~~~~ }*
+#{if play.mode.name() == 'DEV'}%{shjs_extension = '.css'}%#{/if}
+#{else}%{shjs_extension = '.min.css'}%#{/else}
+#{ifnot _theme}
+#{if play.configuration['plui.shjs.theme']}%{_theme = play.configuration['plui.shjs.theme']}%#{/if}
+#{else}%{_theme = "style"}%#{/else}
+#{/ifnot}
+#{stylesheet id:"shjs-"+_theme, media:'screen,projection,print', src:"shjs/0.6/sh_" + _theme + shjs_extension /}

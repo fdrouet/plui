@@ -32,15 +32,22 @@ bq. TinyMCE is a platform independent web based Javascript HTML WYSIWYG editor c
 
 "Get more info on TinyMCE macros ...":tinymce
 
+* **SHJS** ("shjs.sourceforge.net":http://shjs.sourceforge.net/)
+** Bundled version(s) : 0.6
+
+"Get more info on SHJS macros ...":shjs
+
+bq. SHJS is a JavaScript program which highlights source code passages in HTML documents. Documents using SHJS are highlighted on the client side by the web browser.
+
 * **Menu 01** : a simple horizontal menu
 
 "Get more info on Menu 01 macros ...":menu01
 
-* **Disqus integration**
+* **Disqus integration** ("disqus.com":http://disqus.com/)
 
 "Get more info on Disqus macros ...":disqus
 
-* **Google Analytics integration**
+* **Google Analytics integration** ("www.google.com/analytics":https://www.google.com/analytics/)
 
 "Get more info on Google Analytics macros ...":google-analytics
 
