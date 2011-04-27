@@ -1,0 +1,37 @@
+== Prerequisites 
+
+* Play 1.2
+
+== Installation
+
+Add the following lines in your dependencies.yml to add plui module to your project
+
+bc. require:
+    - play 1.2
+    - ...
+    - org.tarpoon -> plui 0.1.0
+# My repositories
+repositories:
+    - fdrouet:
+        type:       http
+        artifact:   "http://dl.dropbox.com/u/1769530/play/modules/[module]/[module]-[revision].zip"
+        contains:
+            - org.tarpoon -> *
+
+== Content
+
+For the complete user guide, use the documentation embedded in your Play application (DEV mode only) : http://localhost:9000/@documentation/modules/plui/home
+
+=== Javascript and CSS libraries
+
+* Blueprint
+* JQuery
+* JQuery-UI
+* TinyMCE editor
+
+=== Third party services integration
+
+* Disqus
+* Google Analytics
+
+

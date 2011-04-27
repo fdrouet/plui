@@ -1,0 +1,23 @@
+h1. Disqus integration
+
+{toc}
+
+h1. Configuration
+
+Add the following lines in your application.conf :
+
+bc. plui.disqus.shortname=<THE DISQUS FORUM SHORTNAME ID TO USE>
+
+If no Disqus shortname code is defined, Disqus is diabled
+
+
+h1. Macro disqus.comment
+
+Put the following macro where you want to see the Disqus comment area
+
+bc. ...
+    #{disqus.comments /}
+</body>
+
+If no Disqus shortname code is defined, this macro has no effect
+ 
