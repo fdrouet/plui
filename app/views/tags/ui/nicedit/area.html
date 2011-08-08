@@ -1,0 +1,18 @@
+*{
+ *  create a nicEdit editor for the specified text-area
+ *  area (mandatory) the html element id of the text-area to decorate
+ *  charset (optional) the charset to use for javascript link (default: utf-8)
+ *  all (optional) if true, all the text-areas of the page will be decorated with nicEdit (default: false)
+}*
+    <script type="text/javascript">
+        bkLib.onDomLoaded(function() { 
+            new nicEditor({
+                    iconsPath: "@{'/public/javascripts/nicedit/0.9-r23/full/nicEditorIcons.gif'}"
+                    //, fullPanel : true
+                    , buttonList : ['bold', 'italic', 'underline', 'left', 'center', 'right', 'justify', 'ol', 'ul', 'subscript', 'superscript', 'strikethrough', 'removeformat', 'indent', 'outdent', 'hr', 'forecolor', 'bgcolor', 'fontFormat']
+                // 'image', 'upload' * requires nicUpload, 'link' * requires nicLink, 'unlink' * requires nicLink, 'fontSize' * requires nicSelect, 'fontFamily' * requires nicSelect, 'fontFormat' * requires nicSelect, 'xhtml' * required nicCode]
+                }).panelInstance('${_area}');
+            });
+    </script>
+#{if _all}
+#{/if}

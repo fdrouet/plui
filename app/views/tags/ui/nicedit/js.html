@@ -1,0 +1,12 @@
+*{
+ *  create a link element  for nicEdit
+ *  mode (optional) if this parameter is set to DEV the the non minified javascript are used
+ *  charset (optional) the charset to use for javascript link (default: utf-8)
+ *  all (optional) if true, all the text-areas of the page will be decorated with nicEdit (default: false)
+}*
+    #{script id:'nicedit', src:'nicedit/0.9-r23/full/nicEdit'+((play.mode == play.Play.Mode.DEV || _mode == 'DEV') ? '' : '.min')+'.js', charset:_charset /}
+#{if _all}
+    <script type="text/javascript">
+        bkLib.onDomLoaded(function() { nicEditors.allTextAreas({iconsPath: "@{'/public/javascripts/nicedit/0.9-r23/full/nicEditorIcons.gif'}"}) });
+    </script>
+#{/if}

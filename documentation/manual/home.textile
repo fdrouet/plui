@@ -32,6 +32,14 @@ bq. TinyMCE is a platform independent web based Javascript HTML WYSIWYG editor c
 
 "Get more info on TinyMCE macros ...":tinymce
 
+* **nicEdit** ("nicedit.com":http://nicedit.com/) : NicEdit is a Lightweight, Cross Platform, Inline Content Editor to allow easy editing of web site content on the fly in the browser.
+** Bundled version(s) : 0.9-r23 (full version with all plugins)
+
+bq. NicEdit is a Lightweight, Cross Platform, Inline Content Editor to allow easy editing of web site content on the fly in the browser.
+NicEdit Javascript integrates into any site in seconds to make any element/div editable or convert standard textareas to rich text editing.
+
+"Get more info on nicEdit macros ...":nicedit
+
 * **SHJS** ("shjs.sourceforge.net":http://shjs.sourceforge.net/)
 ** Bundled version(s) : 0.6
 

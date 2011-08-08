@@ -1,0 +1,21 @@
+h1. nicEdit
+
+{toc}
+
+h1. Macro plugin ui.nicedit.js
+
+bc. <head>
+    ...
+    #{ui.nicedit.js /}
+    ...
+</head>
+
+will generate the necessary code to import the js framework
+
+if you specify the all=true parameter to the macro, all the text-areas will be decorated with the nicEdit editor.
+
+h1. Macro plugin ui.nicedit.area
+
+bc. #{ui.nicedit.area area:'area1' /}
+
+Add a nicEdit Editor to the text-area of id 'area1'
