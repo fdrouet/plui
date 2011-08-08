@@ -5,7 +5,7 @@ h1. UI Module
 This module help you to use various javascript / css frameworks like :
 
 * **Blueprint** ("blueprintcss.org":http://blueprintcss.org/)
-** Bundled version(s) : 1.0.0 (+ 0.9.1)
+** Bundled version(s) : 1.0.1 (+ 0.9.1)
 
 "Get more info on Blueprint macros ...":blueprint
 

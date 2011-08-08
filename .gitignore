@@ -1,4 +1,5 @@
 # ignore standard temp files
+temp/
 *.swp
 
 # ignore eclipse files
@@ -16,4 +17,3 @@ tmp/
 
 # ignore Maven files
 *target/
-

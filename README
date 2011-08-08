@@ -37,6 +37,8 @@ For the complete user guide, use the documentation embedded in your Play applica
 
 
 === Changelog
+==== 0.4.0
+* (>) upgrade blueprint css framework (v 1.0.1)
 ==== 0.3.0
 * (+) add shjs (v 0.6) js colorization framework
 * minor bugfix in the disqus and google-analytics play tags
