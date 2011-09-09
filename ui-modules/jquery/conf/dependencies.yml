@@ -1,0 +1,4 @@
+self: org.tarpoon -> jquery 1.0
+
+require:
+    - play

@@ -1,0 +1,4 @@
+self: org.tarpoon -> disqus 1.0
+
+require:
+    - play

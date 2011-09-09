@@ -1,0 +1,4 @@
+self: org.tarpoon -> menusimple 1.0
+
+require:
+    - play

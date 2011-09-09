@@ -1,0 +1,29 @@
+# Application dependencies
+
+require:
+    - play
+    - org.tarpoon -> jquery 1.0
+    - org.tarpoon -> jqueryui 1.0
+    - org.tarpoon -> blueprint 1.0
+    - org.tarpoon -> bootstrap 1.0
+    - org.tarpoon -> less 1.0
+    - org.tarpoon -> shjs 1.0
+    - org.tarpoon -> nicedit 1.0
+    - org.tarpoon -> tinymce 1.0
+    - org.tarpoon -> disqus 1.0
+    - org.tarpoon -> analytics 1.0
+    - org.tarpoon -> menusimple 1.0
+
+repositories: 
+    - modules: 
+        type: chain 
+        using: 
+            - localModules: 
+                type: local 
+                descriptor: "${application.path}/ui-modules/[module]/conf/dependencies.yml" 
+                artifact: "${application.path}/ui-modules/[module]" 
+            - repoModules: 
+                type: http 
+                artifact: "http://dl.dropbox.com/u/1769530/play/modules/[module]/[module]-[revision].zip" 
+        contains: 
+            - org.tarpoon -> * 

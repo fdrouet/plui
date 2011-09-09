@@ -1,0 +1,28 @@
+h1. Disqus integration
+
+h2. Description
+
+bq. DISQUS is a comments platform that helps you build an active community from your website's audience. It has awesome features, powerful tools, and it's easy to install.
+
+|_Website|_Bundled versions|
+|<>"disqus.com":http://disqus.com/|<>-|
+
+h2. Configuration
+
+Add the following lines in your application.conf :
+
+bc. plui.disqus.shortname=<THE DISQUS FORUM SHORTNAME ID TO USE>
+
+If no Disqus shortname code is defined, Disqus is diabled
+
+h2. Bundled Macros
+
+h3. #{disqus.comment}
+
+Put the following macro where you want to see the Disqus comment area
+
+bc. ...
+    #{disqus.comments /}
+</body>
+
+If no Disqus shortname code is defined, this macro has no effect

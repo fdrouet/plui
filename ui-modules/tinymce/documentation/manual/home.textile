@@ -1,0 +1,16 @@
+h1. TinyMCE integration
+
+h2. Description
+
+bq. TinyMCE is a platform independent web based Javascript HTML WYSIWYG editor control released as Open Source under LGPL by Moxiecode Systems AB. It has the ability to convert HTML TEXTAREA fields or other HTML elements to editor instances. TinyMCE is very easy to integrate into other Content Management Systems.
+
+|_Website|_Bundled versions|
+|<>"tinymce.moxiecode.com":http://tinymce.moxiecode.com/|<>3.4.2|
+
+h2. Configuration
+
+
+h2. Bundled Macros
+
+h3. #{}
+

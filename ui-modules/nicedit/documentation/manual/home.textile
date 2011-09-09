@@ -1,0 +1,32 @@
+h1. nicEdit integration
+
+h2. Description
+
+bq. NicEdit is a WYSIWYG editor for websites. Its goal is to be as simple and fast as possible for users of your application. NicEdit is extremely lightweight and can be easily integrated in any site with minimal impact while providing visitors an effective means to express themselves in rich text.
+
+|_Website|_Bundled versions|
+|<>"nicedit.com":http://nicedit.com/|<>0.9 r23|
+
+h2. Configuration
+
+
+
+h2. Bundled Macros
+
+h3. #{ui.nicedit.js}
+
+bc. <head>
+    ...
+    #{ui.nicedit.js /}
+    ...
+</head>
+
+will generate the necessary code to import the js framework
+
+if you specify the all=true parameter to the macro, all the text-areas will be decorated with the nicEdit editor.
+
+h3. #{ui.nicedit.area}
+
+bc. #{ui.nicedit.area area:'area1' /}
+
+Add a nicEdit Editor to the text-area of id 'area1'

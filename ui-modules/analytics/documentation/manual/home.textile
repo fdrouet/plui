@@ -1,0 +1,32 @@
+h1. Google Analytics integration
+
+h2. Description
+
+bq. Google Analytics is the enterprise-class web analytics solution that gives you rich insights into your website traffic and marketing effectiveness. Powerful, flexible and easy-to-use features now let you see and analyze your traffic data in an entirely new way. With Google Analytics, you're more prepared to write better-targeted ads, strengthen your marketing initiatives and create higher converting websites.
+
+|_Website|_Bundled versions|
+|<>"www.google.com/analytics":http://www.google.com/analytics/|<>-|
+
+h2. Configuration
+
+Add the following lines in your application.conf :
+
+bc. plui.googleanalytics.account=<YOUR GOOGLE ANALYTICS TRACKING CODE>
+
+If no tracking code is defined, the tracker is desactivated
+
+bc. plui.googleanalytics.indev=false
+
+Do you want to have the Google Analytics tracker in Play DEV mode ?
+
+h2. Bundled Macros
+
+h3. #{google-analytics.js}
+
+Put the following macro just before the </body> html element (in your mail.html template for exemple)
+
+bc. ...
+    #{google-analytics.js /}
+</body>
+
+if the Google Analytics tracking code is defined in the application.conf, the javascript tracker is injected into the page.

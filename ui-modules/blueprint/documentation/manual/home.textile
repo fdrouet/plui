@@ -1,0 +1,62 @@
+h1. Blueprint
+
+h2. Description
+
+bq. Blueprint is a CSS framework, which aims to cut down on your development time. It gives you a solid foundation to build your project on top of, with an easy-to-use grid, sensible typography, useful plugins, and even a stylesheet for printing.
+
+|_Website|_Bundled versions|
+|<>"blueprintcss.org":http://blueprintcss.org/|<>1.0.1|
+
+
+h2. Bundled Macros
+
+h3. #{blueprint.css}
+
+bc. <head>
+    ...
+    #{blueprint.css /}
+    ...
+</head>
+
+will generate the following code
+
+bc. <head>
+    ...
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/blueprint/1.0.1/print.css" media="print" charset="utf-8" ></link>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/blueprint/1.0.1/ie.css" media="screen, projection" charset="utf-8" ></link>
+    <![endif]-->
+    ...
+</head>
+
+h3. #{blueprint.link-icons.css}
+
+bc. <head>
+    ...
+    #{blueprint.plugin.link-icons.css /}
+    ...
+</head>
+
+will generate the following code
+
+bc. <head>
+    ...
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/blueprint/1.0.1/plugins/link-icons/screen.css" media="screen, projection" />
+    ...
+</head>
+
+h3. #{blueprint.fancy-type.css}
+
+bc. <head>
+    ...
+    #{blueprint.plugin.fancy-type.css /}
+    ...
+</head>
+
+will generate the following code
+
+bc. <head>
+    ...
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/blueprint/1.0.1/plugins/fancy-type/screen.css" media="screen, projection" />
+    ...
+</head>

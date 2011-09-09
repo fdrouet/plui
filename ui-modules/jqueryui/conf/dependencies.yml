@@ -1,0 +1,5 @@
+self: org.tarpoon -> jqueryui 1.0
+
+require:
+    - play
+    - org.tarpoon -> jquery 1.0

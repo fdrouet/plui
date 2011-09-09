@@ -1,0 +1,4 @@
+self: org.tarpoon -> blueprint 1.0
+
+require:
+    - play

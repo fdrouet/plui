@@ -12,6 +12,7 @@ dist/
 eclipse/
 lib/
 logs/
+modules/
 tmp/
 *.pyc
 

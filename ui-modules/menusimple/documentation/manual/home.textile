@@ -1,0 +1,35 @@
+h1. Simple Menu
+
+h2. Description
+
+bq. Very simple and basic menu with only 1 level. Good to start ...
+
+|_Website|_Bundled versions|
+|<>-|<>-|
+
+h2. Configuration
+
+
+h2. Bundled Macros
+
+h3. #{ui.menu01.css}
+
+bc. <head>
+    ...
+    #{ui.menu01.css /}
+    ...
+</head>
+
+will generate the necessary code to import the css
+
+h2. Create the menu and entries
+
+bc. <head>
+    ...
+    #{ui.menu01.menu}
+        #{ui.menu01.menu-entry}#{a @Application.index()}Accueil#{/a}#{/ui.menu01.menu-entry}
+        #{ui.menu01.menu-entry}<a href="#" title="Administration">Administration</a>#{/ui.menu01.menu-entry}
+    #{/ui.menu01.menu}
+    ...
+</head>
+

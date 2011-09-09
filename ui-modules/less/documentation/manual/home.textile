@@ -1,0 +1,16 @@
+h1. Less integration
+
+h2. Description
+
+bq. LESS extends CSS with dynamic behavior such as variables, mixins, operations and functions. LESS runs on both the client-side (IE 6+, Webkit, Firefox) and server-side, with Node.js.
+
+|_Website|_Bundled versions|
+|<>"lesscss.org":http://lesscss.org/|<>1.1.3|
+
+h2. Configuration
+
+
+h2. Bundled Macros
+
+h3. #{}
+

@@ -1,0 +1,4 @@
+self: org.tarpoon -> analytics 1.0
+
+require:
+    - play

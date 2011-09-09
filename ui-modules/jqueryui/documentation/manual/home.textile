@@ -1,0 +1,16 @@
+h1. jQuery integration
+
+h2. Description
+
+bq. jQuery UI provides abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets, built on top of the jQuery JavaScript Library, that you can use to build highly interactive web applications.
+
+|_Website|_Bundled versions|
+|<>"jqueryui.com":http://jqueryui.com/|<>1.8.11|
+
+h2. Configuration
+
+
+h2. Bundled Macros
+
+h3. #{}
+

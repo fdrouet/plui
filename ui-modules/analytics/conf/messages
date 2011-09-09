@@ -1,0 +1,5 @@
+# Default google-analytics messages
+# You can specialize this file for each language.
+# For exemple, for french create a messages.fr file
+
+#google-analytics.name=google-analytics

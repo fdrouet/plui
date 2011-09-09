@@ -1,0 +1,61 @@
+h1. SHJS integration
+
+h2. Description
+
+bq. SHJS is a JavaScript program which highlights source code passages in HTML documents. Documents using SHJS are highlighted on the client side by the web browser.
+
+|_Website|_Bundled versions|
+|<>"shjs.sourceforge.net":http://shjs.sourceforge.net/|<>0.6|
+
+h2. Configuration
+
+Add the following lines in your application.conf to define the required colorization theme :
+
+bc. plui.shjs.theme=<THE THEME NAME>
+
+**theme liste :** acid, berries-dark, berries-light, bipolar, blacknblue, bright, contrast, darkblue, darkness, desert, dull, easter, emacs, golden, greenlcd, ide-anjuta, ide-codewarrior, ide-devcpp, ide-eclipse, ide-kdev, ide-msvcpp, kwrite, matlab, navy, nedit, neon, night, pablo, peachpuff, print, rand01, style, the, typical, vampire, vim-dark, vim, whatis, whitengrey, zellner
+
+
+h2. Bundled Macros
+
+h3. #{ui.shjs.css}
+
+Insert the following macro in the html page header section :
+
+bc. <head>
+    ...
+    #{ui.shjs.css /}
+    ...
+</head>
+
+will generate the necessary stylesheet links
+
+h3. #{ui.shjs.js}
+
+Insert the following macro in the html page header section :
+
+bc. <head>
+    ...
+    #{ui.shjs.js /}
+    ...
+</head>
+
+will generate the necessary javascript stuff
+
+h3. #{ui.shjs.code.XXXX}
+
+This macro is will decorate a string of code in the XXXX specified language.
+
+The list of supported languages is : css, diff, html, java, javascript, properties, sh, sql, xml
+
+* exemple : colorization of java code
+
+bc. #{ui.shjs.code.java}
+public class Foo {
+	public Foo() {
+	}
+	public String getBar() {
+		return "bar";
+	}
+}
+#{/ui.shjs.code.java}
