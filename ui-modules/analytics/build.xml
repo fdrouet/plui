@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="google-analytics" default="build" basedir=".">
+<project name="analytics" default="build" basedir=".">
 
     <target name="check" unless="play.path">
         <fail message="Please specify Play framework path using -Dplay.path=/path/to/framework/home" />
@@ -32,7 +32,7 @@
         <jar destfile="lib/play-google-analytics.jar" basedir="tmp/classes">
             <manifest>
                 <section name="Play-module">
-                    <attribute name="Specification-Title" value="google-analytics"/>
+                    <attribute name="Specification-Title" value="analytics"/>
                 </section>
             </manifest>
         </jar>
