@@ -1,3 +1,4 @@
 *{ TODO documenter les parametres
+	plugin (required) : which plugin to import (alert, dropdown, modal, popover, scrollspy, tabs, twipsy)
 }*
-    #{script id:'bootstrap-js' , src:'bootstrap/bootstrap.js', charset:_charset /}
+    #{script id:'bootstrap-js' , src:'bootstrap/1.3.0/bootstrap-'+_plugin+'.js', charset:_charset /}
