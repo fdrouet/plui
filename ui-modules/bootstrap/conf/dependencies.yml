@@ -1,6 +1,6 @@
 self: org.tarpoon -> bootstrap 1.0
 
 require:
-    - play
+    - play 1.2
     - org.tarpoon -> jquery 1.0
     - org.tarpoon -> less 1.0
