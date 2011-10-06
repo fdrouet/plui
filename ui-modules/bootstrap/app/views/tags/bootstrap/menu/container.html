@@ -1,0 +1,40 @@
+*{ TODO documenter les parametres
+	id (optional) : the html id to use for the menu div placeholder
+	name (optional) : the name of the site/page to put on the left of the menu
+}*
+    	<div %{(_id ? 'id="topbar"' : '')}% class="topbar" data-dropdown="dropdown">
+	    	<div class="fill">
+		    	<div class="container-fluid">
+		    		#{if _name}
+		    		<a class="brand" href="#">${_name}</a>
+		    		#{/if}
+		    		<ul class="nav">
+		    			#{doBody /}
+		    			<!--
+			            <li class="active"><a href="#">Home</a></li>
+			            <li><a href="#about">About</a></li>
+			            <li><a href="#contact">Contact</a></li>
+			            <li class="menu">
+							<a href="#" class="menu">Dropdown</a>
+							<ul class="menu-dropdown">
+								<li><a href="#">Secondary link</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Another link</a></li>
+							</ul>
+						</li>
+			            <li class="menu">
+							<a href="#" class="menu">Dropdown</a>
+							<ul class="menu-dropdown">
+								<li><a href="#">Secondary link</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Another link</a></li>
+							</ul>
+						</li>
+						-->
+					</ul>
+		    	</div>
+	    	</div>
+    	</div>
+    

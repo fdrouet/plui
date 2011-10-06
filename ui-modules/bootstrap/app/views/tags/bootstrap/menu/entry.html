@@ -1,0 +1,10 @@
+*{ 
+	active (optional) : is this menu entry active ? (default = false)
+}*
+			            #{if active}
+			            <li class="active">#{doBody /}</li>
+			            #{/if}
+			            #{else}
+			            <li>#{doBody /}</li>
+			            #{/else}
+			            
