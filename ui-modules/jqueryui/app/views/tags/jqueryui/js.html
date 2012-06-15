@@ -1,0 +1,14 @@
+*{
+ *  create a link element  for jQuery UI
+ *  mode    (optional)  if this parameter is set to DEV the the non minified javascript are used
+ *  charset (optional)  the charset to use for javascript link (default: utf-8)
+ *  lang    (optional)  the lang to use for jQuery UI (default: en-GB)
+ *  version (optional)  the version to use (default: most recent version bundled in the module)
+}*
+    #{script id:'jqueryui', src:'jqueryui/'+ ((_version == null || _version == '') ? '1.8.21' : _version) +'/jquery-ui.custom'+((play.mode == play.Play.Mode.DEV || _mode == 'DEV') ? '' : '.min')+'.js', charset:_charset /}
+	#{script id:'jqueryui-i18n', src:'jqueryui/'+ ((_version == null || _version == '') ? '1.8.21' : _version) +'/jquery-ui-i18n.js', charset:_charset /}
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $.datepicker.setDefaults($.datepicker.regional['${_lang ? _lang :'en-GB'}']);
+	   });
+	</script>

@@ -1,2 +1,7 @@
-*{ TODO documenter les parametres }*
-    #{script id:'jquery-js' , src:'jquery/1.5.2/jquery'+((play.mode == play.Play.Mode.DEV || _mode == 'DEV') ? '' : '.min')+'.js', charset:_charset /}
+*{
+    Parameters :
+        - mode    (optional)  : specify the current mode to choose the javascript version of the file (default: play mode)
+        - charset (???)
+        - version (optional) : specify the version of jquery to use. (default: the most recent version available in the plugin will be used)
+}*
+#{script id:'jquery-js' , src:'jquery/'+ ((_version == null || _version == '') ? '1.7.2' : _version) +'/jquery'+((play.mode == play.Play.Mode.DEV || _mode == 'DEV') ? '' : '.min')+'.js', charset:_charset /}

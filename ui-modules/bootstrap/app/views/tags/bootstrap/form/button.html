@@ -1,0 +1,10 @@
+*{
+    Parameters :
+        # href    (optional) (default: #)
+            the target of the button
+        # label   (optional) (default: )
+        # class   (optional) (default: )
+        # icon    (optional) (default: )
+        # white   (optional) (default: false)
+}*
+<a href="${_href}" class="btn ${_class}">#{if _icon}<i class="${_icon} #{if _white}icon-white#{/if}"></i> #{/if}${_label}</a>

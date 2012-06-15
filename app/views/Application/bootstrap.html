@@ -1,0 +1,21 @@
+#{extends 'main.html' /}
+#{set title:'Bootstrap' /}
+
+<div class="row">
+    required version : ${version}<br />
+</div>
+
+<div class="row">
+    Buttons<br />
+    #{bootstrap.form.button href:@Application.bootstrap("1.2.3"), label:'Search', icon:'icon-share', white:true /}
+</div>
+
+<div class="row">
+This text has a <strong><span id="popoverText" class="" data-content="aaa">popover</span></strong>
+
+#{set 'moreScripts'}
+    #{get 'moreScripts' /}
+$(document).ready(function() { $(function () {$('#popoverText').popover({ offset: 10 })})});
+#{/set}
+
+</div>

@@ -1,4 +1,7 @@
-*{ TODO documenter les parametres
-	plugin (required) : which plugin to import (alert, dropdown, modal, popover, scrollspy, tabs, twipsy)
+*{
+    Parameters :
+        - mode    (optional)  : specify the current mode to choose the javascript version of the file (default: play mode)
+        - charset (???)
+        - version (optional) : specify the version of bootstrap to use. (default: the most recent version available in the plugin will be used)
 }*
-    #{script id:'bootstrap-js' , src:'bootstrap/1.3.0/bootstrap-'+_plugin+'.js', charset:_charset /}
+#{script id:'bootstrap-js' , src:'bootstrap/'+ ((_version == null || _version == '') ? '2.0.4' : _version) +'/bootstrap'+((play.mode == play.Play.Mode.DEV || _mode == 'DEV') ? '' : '.min')+'.js', charset:_charset /}

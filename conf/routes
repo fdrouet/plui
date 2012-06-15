@@ -8,6 +8,14 @@ GET     /                                       Application.index
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
+# Bootstrap
+GET     /bootstrap/?                            Application.bootstrap
+GET     /bootstrap/{version}                    Application.bootstrap
+
+# JQuery UI
+GET     /jquery-ui/?                            Application.jqueryui
+GET     /jquery-ui/{version}                    Application.jqueryui
+
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 

@@ -1,10 +1,10 @@
 # Here you can create play commands that are specific to the module, and extend existing commands
 
-MODULE = 'jquery-ui'
+MODULE = 'jqueryui'
 
 # Commands that are specific to your module
 
-COMMANDS = ['jquery-ui:hello']
+COMMANDS = ['jqueryui:hello']
 
 def execute(**kargs):
     command = kargs.get("command")
@@ -12,7 +12,7 @@ def execute(**kargs):
     args = kargs.get("args")
     env = kargs.get("env")
 
-    if command == "jquery-ui:hello":
+    if command == "jqueryui:hello":
         print "~ Hello"
 
 

@@ -4,48 +4,57 @@
     <head>
         <title>#{get 'title' /}</title>
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-        #{bootstrap.css /}
-        #{jquery.js /}
-        #{bootstrap.js /}
+    <!-- jquery-ui module -->
+    #{jqueryui.css /}
+    #{bootstrap.css responsive:'true' /}
     </head>
-    <body style="padding-top: 40px;">
-    
-    <div class="topbar-wrapper">
-    <div class="topbar">
-    <div class="topbar-inner">
+    <body style="padding-top: 60px;">
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <!-- Be sure to leave the brand out there if you want it shown -->
+                <a class="brand" href="@{Application.index}">Play UI</a>
+                <ul class="nav">
+                    <li><a href="@{Application.bootstrap}">Bootstrap</a></li>
+                    <li><a href="@{Application.jqueryui}">JQuery UI</a></li>
+                    <li><a href="#">...</a></li>
+                </ul>
+                <ul class="nav pull-right">
+                    <li>
+                        <form class="navbar-search" action="">
+                            <div class="input-prepend">
+                                <span class="add-on"><i class="icon-search"></i></span>
+                                <input type="text" placeholder="Search" class=" search-query" />
+                            </div>
+                        </form>
+                    </li>
+                    <a href="#" class="btn btn-mini"><i class="icon-question-sign"></i></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
-    	<h3><a href="#">Play UI</a></h3>
-    	<ul class="nav">
-    		<li class="menu"><a href="#">Home</a></li>
-    		<li class="dropdown">
-    			<a href="#" class="dropdown-toggle">Bootstrap</a>
-    			<ul class="dropdown-menu">
-    				<li><a href="#">Menu 1</a></li>
-    				<li><a href="#">Menu 2</a></li>
-    			</ul>
-    		</li>
-			<li><a href="#">Ahahah</a></li>
-    	</ul>
-          <form action="">
-            <input type="text" placeholder="Search" />
-          </form>
-          <ul class="nav secondary-nav">
-          	<li class="dropdown">
-          		<a href="#" class="dropdown-toggle">Dropdown</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Secondary link</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Another link</a></li>
-              </ul>
-          	</li>
-          </ul>
-    </div>
-    </div>
-    </div>
-    </div>
-
-
         #{doLayout /}
+    </div>
+    <!-- ===================
+        javascript imports
+        =================== -->
+    <!-- jquery module -->
+    #{jquery.js /}
+    <!-- old version packaged (for testing purpose)
+        #{jquery.js version:'1.7.2', charset:_response_encoding /}
+        #{jquery.js version:'1.6.4', charset:_response_encoding /}
+        #{jquery.js version:'1.5.2', charset:_response_encoding /}
+    -->
+    <!-- jquery-ui module -->
+    #{jqueryui.js /}
+    <!-- bootstrap module -->
+    #{bootstrap.js /}
+    <!-- All more script -->
+    <script type="text/javascript" language="javascript">
+        #{get 'moreScripts' /}
+        </script>
     </body>
 </html>

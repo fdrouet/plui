@@ -1,2 +1,12 @@
-*{ create a link element for Twitter Bootstrap }*
-#{stylesheet src:'bootstrap/1.3.0/bootstrap'+((play.mode == play.Play.Mode.DEV || _mode == 'DEV') ? '' : '.min')+'.css', media:'all' /}
+*{ create a link element for Twitter Bootstrap stylesheet
+
+    Parameters :
+        - mode       (optional) : specify the current mode to choose the css version of the file (default: play mode)
+        - version    (optional) : specify the version of bootstrap to use. (default: the most recent version available in the plugin)
+        - media      (optional) : specify the style media to use. (default: all)
+        - responsive (optional) : add the responsive stylesheet for bootstrap (default: false)
+}*
+#{stylesheet src:'bootstrap/'+ ((_version == null || _version == '') ? '2.0.4' : _version) +'/bootstrap'+((play.mode == play.Play.Mode.DEV || _mode == 'DEV') ? '' : '.min')+'.css', media:((_media == null || _media == '') ? 'all' : _media) /}
+#{if _responsive}
+    #{stylesheet src:'bootstrap/'+ ((_version == null || _version == '') ? '2.0.4' : _version) +'/bootstrap-responsive'+((play.mode == play.Play.Mode.DEV || _mode == 'DEV') ? '' : '.min')+'.css', media:((_media == null || _media == '') ? 'all' : _media) /}
+#{/if}

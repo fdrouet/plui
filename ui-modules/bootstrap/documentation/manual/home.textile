@@ -6,10 +6,20 @@ bq. Bootstrap is a toolkit from Twitter designed to kickstart development of web
 It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.
 
 |_Website|_Bundled versions|
-|<>"twitter.github.com/bootstrap":http://twitter.github.com/bootstrap/|<>1.2.0|
+|<>"twitter.github.com/bootstrap":http://twitter.github.com/bootstrap/|<>2.0.4|
 
 h2. Configuration
 
+h3. Simplest
+
+bc. <head>
+    ...
+    #{bootstrap.css /}
+</head>
+<body>
+    ...
+    #{bootstrap.js /}
+</body>
 
 h2. Bundled Macros
 

@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'Bootstrap' /}
+
+<div class="row">
+    required version : ${version}<br />
+</div>
+
+<div class="row">
+    Date picker<br />
+
+    <input type="text" id="input-date-picker" />
+    #{jqueryui.datepicker id:'input-date-picker' /}
+</div>
+
