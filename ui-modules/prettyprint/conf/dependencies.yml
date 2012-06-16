@@ -1,0 +1,4 @@
+self: org.tarpoon -> prettyprint 1.0
+
+require:
+    - play 1.2

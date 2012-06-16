@@ -5,10 +5,73 @@
     required version : ${version}<br />
 </div>
 
-<div class="row">
-    Date picker<br />
 
-    <input type="text" id="input-date-picker" />
-    #{jqueryui.datepicker id:'input-date-picker' /}
+<div class="row">
+    <legend>Date picker</legend>
+    <div class="span6">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="input-date-picker">Date</label>
+                <div class="controls">
+                    <input type="text" id="input-date-picker" />
+                    #{jqueryui.datepicker id:'input-date-picker' /}
+                    <p class="help-block">Type or select Date (format: dd/MM/yyyy)</p>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="span6">
+#{prettyprint.pre}
+&lt;input type="text" id="input-date-picker" /&gt;
+#&#123;jqueryui.datepicker id:'input-date-picker' /&#125;
+#{/prettyprint.pre}
+    </div>
+</div>
+
+<div class="row">
+    <legend>Date & Time picker</legend>
+    <div class="span6">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="input-datetime-picker">Date & Time</label>
+                <div class="controls">
+                    <input type="text" id="input-datetime-picker" />
+                    #{jqueryui.datetimepicker id:'input-datetime-picker' /}
+                    <p class="help-block">Type or select Date & Time (format: dd/MM/yyyy hh:mm)</p>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="span6">
+#{prettyprint.pre}
+&lt;input type="text" id="input-datetime-picker" /&gt;
+#&#123;jqueryui.datetimepicker id:'input-datetime-picker' /&#125;
+#{/prettyprint.pre}
+    </div>
+</div>
+
+<div class="row">
+    <legend>Time picker</legend>
+    <div class="span6">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="input-time-picker">Time</label>
+                <div class="controls">
+                    <input type="text" id="input-time-picker" />
+                    #{jqueryui.timepicker id:'input-time-picker' /}
+                    <p class="help-block">Type or select Time (format: hh:mm)</p>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="span6">
+    #{prettyprint.pre}
+&lt;input type="text" id="input-time-picker" /&gt;
+#&#123;jqueryui.timepicker id:'input-time-picker' /&#125;
+#{/prettyprint.pre}
+    </div>
 </div>
 

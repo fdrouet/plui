@@ -4,6 +4,7 @@ require:
     - play
     - org.tarpoon -> jquery 1.0
     - org.tarpoon -> jqueryui 1.0
+    - org.tarpoon -> prettyprint 1.0
     - org.tarpoon -> blueprint 1.0
     - org.tarpoon -> bootstrap 1.0
     - org.tarpoon -> less 1.0

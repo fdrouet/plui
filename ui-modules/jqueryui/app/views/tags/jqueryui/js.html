@@ -12,3 +12,10 @@
 		    $.datepicker.setDefaults($.datepicker.regional['${_lang ? _lang :'en-GB'}']);
 	   });
 	</script>
+    #{script id:'jqueryui-addon-timepicker', src:'jqueryui-addons/timepicker/1.0.0/jquery-ui-timepicker-addon.js', charset:_charset /}
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $.timepicker.setDefaults($.timepicker.regional['${_lang ? _lang :'en-GB'}']);
+    });
+</script>

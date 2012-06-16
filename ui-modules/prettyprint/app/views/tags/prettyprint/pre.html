@@ -1,0 +1,8 @@
+*{
+ *  create a link element for jQuery UI
+ *  lang (optional) the language to colorize (default: auto-detect) (possible values: "bsh", "c", "cc", "cpp", "cs", "csh", "cyc", "cv", "htm", "html", "java", "js", "m", "mxml", "perl", "pl", "pm", "py", "rb", "sh","xhtml", "xml", "xsl".
+    linenums (optional) if a number > 0 is specified, line numbering start at this index. If the parameter is not provided or zero, no line number will be printed (default: no line number)
+}*
+<pre class="prettyprint #{if _lang} lang-${_lang}#{/if}#{if _linenums} linenums:${_linenums}#{/if}">
+#{doBody /}
+</pre>

@@ -1,0 +1,9 @@
+*{
+ *  create a link element  for Google Prettify
+ *  charset (optional)  the charset to use for javascript link (default: utf-8)
+}*
+    #{script id:'prettyprint', src:'prettyprint/prettify.js', charset:_charset /}
+#{set 'moreScripts'}
+    #{get 'moreScripts' /}
+$(document).ready(function() { prettyPrint(); });
+#{/set}

@@ -1,0 +1,8 @@
+*{
+ *  create a link element for jQuery UI
+ *  theme (optional) the name of the theme (default: base)
+}*
+    #{stylesheet src:'prettyprint/prettify.css', media:'screen, projection' /}
+#{if _theme}
+    #{stylesheet src:'prettyprint/themes/prettify-'+_theme+'.css', media:'screen, projection' /}
+#{/if}

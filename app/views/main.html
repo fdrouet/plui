@@ -4,9 +4,12 @@
     <head>
         <title>#{get 'title' /}</title>
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-    <!-- jquery-ui module -->
-    #{jqueryui.css /}
-    #{bootstrap.css responsive:'true' /}
+        <!-- jquery-ui module -->
+        #{jqueryui.css /}
+        <!-- bootstrap module -->
+        #{bootstrap.css responsive:'true' /}
+        <!-- Google prettyprint module -->
+        #{prettyprint.css theme:'sunburst'/}
     </head>
     <body style="padding-top: 60px;">
 
@@ -52,6 +55,8 @@
     #{jqueryui.js /}
     <!-- bootstrap module -->
     #{bootstrap.js /}
+    <!-- Google prettyprint module -->
+    #{prettyprint.js /}
     <!-- All more script -->
     <script type="text/javascript" language="javascript">
         #{get 'moreScripts' /}
